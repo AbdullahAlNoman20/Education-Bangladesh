@@ -1,0 +1,47 @@
+[
+  {
+      "id": 1,
+      "spotName": "Deluxe Suite",
+      "country": "India",
+      "img": "https://i.ibb.co/1q53NpC/c1.jpg",
+      "description": "Our Standard Room offers comfort and convenience at an affordable price. Perfect for solo travelers or couples, it features all the essential amenities for a relaxing stay",
+      "cost": "25 USD for foreigners",
+      "time": "October to March"
+  },
+  {
+      "id": 2,
+      "spotName": "Standard Room",
+      "country": "China",
+      "img": "https://i.ibb.co/cc3H6W9/r2.jpg",
+      "description": "Our Standard Room offers comfort and convenience at an affordable price. Perfect for solo travelers or couples, it features all the essential amenities for a relaxing stay.",
+      "cost": "6 USD entrance fee",
+      "time": "April to May, September to October"
+  },
+  {
+      "id": 3,
+      "spotName": "Cityview Deluxe Room",
+      "country": "Malaysia",
+      "img": "https://i.ibb.co/SNHT5vj/r3.jpg",
+      "description": "Enjoy stunning panoramic views of the city skyline from our Cityview Deluxe Room. Featuring modern amenities and elegant decor, this spacious room is perfect for both business and leisure travelers.",
+      "cost": "20 USD for adult foreign visitors",
+      "time": "Year-round"
+  },
+  {
+      "id": 4,
+      "spotName": "Executive Suite",
+      "country": "Indonesia",
+      "img": "https://i.ibb.co/w49Y7TB/r4.png",
+      "description": "The Chocolate Hills are a geological formation in the Bohol province of the Philippines. There are at least 1,260 hills but there may be as many as 1,776 hills spread over an area of more than 50 square kilometers. They are covered in green grass that turns brown (like chocolate) during the dry season, hence the name.",
+      "cost": "25 USD for foreign tourists",
+      "time": "April to October"
+  },
+  {
+      "id": 5,
+      "spotName": "Cityview Deluxe Room",
+      "country": "Japan",
+      "img": "https://i.ibb.co/1rTcqvn/r5.jpg",
+      "description": "Experience the epitome of luxury in our Executive Suite. With a separate living area, plush furnishings, and premium amenities, this suite offers unparalleled comfort and style.",
+      "cost": "Free to view, approximately 100 USD for climbing permits and guide fees",
+      "time": "July to early September"
+  }
+]

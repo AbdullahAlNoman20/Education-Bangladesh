@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "countryName": "Introduction to Computer Science",
+        "spotName": "Dr. Ahsanullah Chowdhury",
+        "img": "https://i.ibb.co/9257p0q/2b-P4p-Jr4w-Vimq-CWj-Yim-XJe2cn-Cgn9-TYj-DCy-K2-UBWPEN.png",
+        "description": "This course provides a comprehensive introduction to the fundamentals of computer science, covering topics such as algorithms, data structures, and basic programming.",
+        "cost": "5000 BDT",
+        "time": "12 weeks"
+    },
+    {
+        "id": 2,
+        "countryName": "Advanced Mathematics",
+        "spotName": "Prof. Nusrat Jahan",
+        "img": "https://i.ibb.co/sjVRqmw/1.jpg",
+        "description": "An in-depth course focused on advanced mathematical concepts including calculus, linear algebra, and differential equations, designed for students aiming to excel in engineering and physical sciences.",
+        "cost": "6000 BDT",
+        "time": "10 weeks"
+    },
+    {
+        "id": 3,
+        "countryName": "English Language Proficiency",
+        "spotName": "Mr. Tanvir Ahmed",
+        "img": " https://i.ibb.co/f0MBqKf/thumb-1200-1260.png",
+        "description": "Enhance your English language skills with our comprehensive course covering grammar, vocabulary, reading, writing, and speaking exercises tailored to all proficiency levels.",
+        "cost": "4000 BDT",
+        "time": "8 weeks"
+    },
+    {
+        "id": 4,
+        "countryName": "Business Management Essentials",
+        "spotName": "Dr. Farzana Rahman",
+        "img": "https://i.ibb.co/4Mpgh1r/app6ykaagqpc3iciwikz.png",
+        "description": "Learn the key principles of business management, including strategic planning, organizational behavior, marketing, and financial management, to prepare for a successful career in business.",
+        "cost": "7000 BDT",
+        "time": "14 weeks"
+    },
+    {
+        "id": 5,
+        "countryName": "Basic Graphic Design",
+        "spotName": "Ms. Rifat Hasan",
+        "img": "https://i.ibb.co/ctTZxh7/scale-1200.png",
+        "description": "This course covers the basics of graphic design, including principles of design, typography, and using design software like Adobe Photoshop and Illustrator to create stunning visuals.",
+        "cost": "3000 BDT",
+        "time": "6 weeks"
+    }
+]
