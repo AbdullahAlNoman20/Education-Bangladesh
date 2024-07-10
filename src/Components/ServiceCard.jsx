@@ -6,9 +6,9 @@ const ServiceCard = ({ serviceCard }) => {
 
   return (
     <div>
-      <NavLink to={`/spotDetails/${id}`}>
+      
         <div
-          className="max-w-xs p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900 lg:h-[680px]"
+          className="max-w-xs p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900 lg:h-auto"
           data-aos-duration="2000"
           data-aos="zoom-in"
         >
@@ -25,10 +25,13 @@ const ServiceCard = ({ serviceCard }) => {
           <div className="flex flex-col justify-center mt-3">
             <p>Duration: {time}</p>
             <p>Cost: {cost}</p>
+            <NavLink to={`/spotDetails/${id}`}>
+            <button className="btn btn-outline btn-warning border-0 border-b-4 rounded-2xl font-bold p-5">Read More</button>
+            </NavLink>
+            
           </div>
           
         </div>
-      </NavLink>
     </div>
   );
 };

@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const ImageHoverPopup = () => {
-
   const { user, logOut } = useContext(AuthContext);
   // console.log(user);
 
@@ -37,7 +36,7 @@ const ImageHoverPopup = () => {
               {(user && (
                 <div className="">
                   <p className="text-xl">{user.displayName}</p>
-                  <div className="text-center p-5">
+                  <div className="text-center pt-5">
                     <NavLink to="/">
                       <button
                         onClick={handleSignOut}
@@ -45,6 +44,13 @@ const ImageHoverPopup = () => {
                       >
                         <i className="fa-solid fa-right-from-bracket"></i>{" "}
                         Logout
+                      </button>
+                    </NavLink>
+                  </div>
+                  <div className="text-center pt-5">
+                    <NavLink to="/s_dashboard">
+                      <button className="btn btn-outline btn-warning">
+                        Dashboard
                       </button>
                     </NavLink>
                   </div>

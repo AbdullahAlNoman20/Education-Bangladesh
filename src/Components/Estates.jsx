@@ -1,10 +1,10 @@
 import "animate.css";
-import Countries from "./Countries";
+
 import Service from "./Service";
 // import UserReview from "../Components11/UserReview";
-import About from "./About";
-import { NavLink } from "react-router-dom";
+
 import Map from "../Components11/Map";
+import Tutors from "../Components12/Tutors";
 
 const Estates = () => {
   return (
@@ -13,6 +13,7 @@ const Estates = () => {
         <h1 className="font-bold text-4xl animate__animated animate__bounce mb-5">
           | Explore Our Courses |
         </h1>
+        <p className="font-bold">Study Session for 2024.</p>
         <p className="text-justify">
           Dive into our diverse range of courses designed to cater to every
           learner's needs. From foundational subjects to advanced
@@ -55,6 +56,11 @@ const Estates = () => {
           </div>
         </div>
       </div>
+
+{/* Tutors */}
+      <section>
+          <Tutors></Tutors>
+      </section>
 
       {/* Countries Section */}
       {/* <Countries></Countries> */}

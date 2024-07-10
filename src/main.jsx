@@ -19,23 +19,15 @@ import Login from "./Components/Login";
 import Register from "./Components/Register";
 import { HelmetProvider } from "react-helmet-async";
 import AuthProviders from "./Components/Providers/AuthProviders";
-import Profile from "./Components/Profile";
 import ProtectedRoute from "./Components/ProtectedRoute";
-import CountryDetails from './Components/CountryDetails';
 import SpotDetails from './Components/SpotDetails';
-import MyBooking from './Components11/MyBooking';
-import Rooms from './Components11/Rooms';
 import Contact from './Components11/Contact';
 import AboutUs from './Components11/AboutUs';
-// import UserReview from './Components11/UserReview';
-import MyList from './Components/MyList';
-import UpdateSpot from './Components/UpdateSpot';
-import About from './Components/About';
-import AddTouristSpot from './Components/AddTouristSpot';
 import S_Dashboard from './Components12/S_Dashboard';
 import AllUsers from './Components12/AllUsers';
 import Courses from './Components12/Courses';
 import Materials from './Components12/Materials';
+import T_Dashboard from './Components12/T_Dashboard';
 
 const router = createBrowserRouter([
   {
@@ -79,6 +71,20 @@ const router = createBrowserRouter([
           },
           {
             path: "courses",
+            element: <Courses></Courses>,
+          },
+          {
+            path: "materials",
+            element: <Materials></Materials>,
+          },
+        ]
+      },
+      {
+        path: "/t_dashboard",
+        element: <ProtectedRoute><T_Dashboard></T_Dashboard></ProtectedRoute>,
+        children: [
+          {
+            path: true,
             element: <Courses></Courses>,
           },
           {

@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "photo": "https://i.ibb.co/yXZSsjh/d1.jpg",
+      "name": "Dr. Emily Johnson",
+      "specialist": "Cardiologist",
+      "cost": 100,
+      "time": "Mon - Fri (9:00 AM - 5:00 PM)",
+      "description": "Dr. Emily Johnson is a board-certified cardiologist with over 10 years of experience in diagnosing and treating heart conditions. She is dedicated to providing personalized care to her patients and staying updated with the latest advancements in cardiology."
+    },
+    {
+      "id": 2,
+      "photo": "https://i.ibb.co/fkx7CkL/d2.jpg",
+      "name": "Dr. Michael Rodriguez",
+      "specialist": "Pediatrician",
+      "cost": 80,
+      "time": "Mon - Sat (10:00 AM - 6:00 PM)",
+      "description": "Dr. Michael Rodriguez specializes in pediatric care, with a focus on preventive medicine and child development. He believes in building strong relationships with his young patients and their families to provide comprehensive care."
+    },
+    {
+      "id": 3,
+      "photo": "https://i.ibb.co/34g1W3J/d3.jpg",
+      "name": "Dr. Sarah Lee",
+      "specialist": "Dermatologist",
+      "cost": 120,
+      "time": "Tue - Thu (11:00 AM - 7:00 PM)",
+      "description": "Dr. Sarah Lee is a renowned dermatologist known for her expertise in treating skin conditions and cosmetic dermatology. She is passionate about helping her patients achieve healthy and radiant skin."
+    },
+    {
+      "id": 4,
+      "photo": "https://i.ibb.co/XWZcRSC/d4.png",
+      "name": "Dr. David Patel",
+      "specialist": "Orthopedic Surgeon",
+      "cost": 150,
+      "time": "Mon - Wed, Fri (8:00 AM - 4:00 PM)",
+      "description": "Dr. David Patel is a highly skilled orthopedic surgeon specializing in joint replacement and sports medicine. He is committed to providing individualized treatment plans to restore mobility and improve the quality of life for his patients."
+    },
+    {
+      "id": 5,
+      "photo": "https://i.ibb.co/xXLbqyZ/d5.jpg",
+      "name": "Dr. Jennifer Wong",
+      "specialist": "Psychiatrist",
+      "cost": 130,
+      "time": "Mon - Fri (10:00 AM - 6:00 PM)",
+      "description": "Dr. Jennifer Wong is a compassionate psychiatrist with expertise in treating mood disorders, anxiety, and PTSD. She takes a holistic approach to mental health care, incorporating therapy, medication, and lifestyle modifications."
+    }
+  ]

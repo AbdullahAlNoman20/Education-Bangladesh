@@ -1,7 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 
-
-const S_Dashboard = () => {
+const A_Dashboard = () => {
     return (
         <div>
 
@@ -30,4 +29,4 @@ const S_Dashboard = () => {
     );
 };
 
-export default S_Dashboard;
+export default A_Dashboard;
