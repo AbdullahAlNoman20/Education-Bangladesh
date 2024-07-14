@@ -28,6 +28,16 @@ import AllUsers from './Components12/AllUsers';
 import Courses from './Components12/Courses';
 import Materials from './Components12/Materials';
 import T_Dashboard from './Components12/T_Dashboard';
+import Notes from './Components12/Notes';
+import UploadMaterials from './Components12/UploadMaterials';
+import SessionCreate from './Components12/SessionCreate';
+import A_Dashboard from './Components12/A_Dashboard';
+import BookedSession from './Components12/BookedSession';
+import CreateNote from './Components12/CreateNote';
+import MngNote from './Components12/MngNote';
+import StudySessionRequest from './Components12/StudySessionRequest';
+import StudayMaterialForStudent from './Components12/StudayMaterialForStudent';
+import UpdateNote from './Components12/UpdateNote';
 
 const router = createBrowserRouter([
   {
@@ -84,12 +94,54 @@ const router = createBrowserRouter([
         element: <ProtectedRoute><T_Dashboard></T_Dashboard></ProtectedRoute>,
         children: [
           {
-            path: true,
-            element: <Courses></Courses>,
+            path: "create",
+            element: <SessionCreate></SessionCreate>,
+          },
+          {
+            path: "courses",
+            element: <StudySessionRequest></StudySessionRequest>,
+            loader: () => fetch('http://localhost:5000/sessions')
+          },
+          {
+            path: "Upload_Materials",
+            element: <UploadMaterials></UploadMaterials>,
           },
           {
             path: "materials",
             element: <Materials></Materials>,
+          },
+          {
+            path: "notes",
+            element: <Notes></Notes>,
+            loader: () => fetch('http://localhost:5000/nots')
+          },
+        ]
+      },
+      {
+        path: "/a_dashboard",
+        element: <ProtectedRoute><A_Dashboard></A_Dashboard></ProtectedRoute>,
+        children: [
+          {
+            path: "BookedSession",
+            element: <BookedSession></BookedSession>,
+          },
+          {
+            path: "CreateNote",
+            element: <CreateNote></CreateNote>,
+          },
+          {
+            path: "mngNote",
+            element: <MngNote></MngNote>,
+            loader: () => fetch('http://localhost:5000/nots')
+          },
+          {
+            path: "update/:id",
+            element: <UpdateNote></UpdateNote>,
+            loader: ({params}) => fetch(`http://localhost:5000/update/${params.id}`)
+          },
+          {
+            path: "materials",
+            element: <StudayMaterialForStudent></StudayMaterialForStudent>,
           },
         ]
       },
@@ -99,44 +151,7 @@ const router = createBrowserRouter([
         loader: ()=>fetch('/Country.json')
         // loader: ()=>fetch(`https://mountrideserver.vercel.app/courses/${params.id}`)
       },
-      // {
-      //   path: "/countryDetails/:id",
-      //   element: <ProtectedRoute><CountryDetails></CountryDetails></ProtectedRoute>,
-      //   loader: ()=>fetch('/Country.json'),
-      //   // loader: ()=>fetch(`https://mountrideserver.vercel.app/country/${params.id}`)
-      // },
-      // {
-      //   path: "/Profile",
-      //   element: <ProtectedRoute><Profile></Profile></ProtectedRoute>,
-      // },
-      // {
-      //   path: "/Rooms",
-      //   element: <ProtectedRoute><Rooms></Rooms></ProtectedRoute>,
-      // },
-      // {
-      //   path: "/MyBooking",
-      //   element: <ProtectedRoute><MyBooking></MyBooking></ProtectedRoute>,
-      //   loader: ()=>fetch('https://mountrideserver.vercel.app/spot')
-      // },
-      // {
-      //   path: "/",
-      //   element: <UserReview></UserReview>,
-      //   loader: ()=>fetch('https://mountrideserver.vercel.app/spot')
-      // },
-      // {
-      //   path: "/myList",
-      //   element: <ProtectedRoute><MyList></MyList></ProtectedRoute>,
-      //   loader: ()=>fetch('https://mountrideserver.vercel.app/spot')
-      // },
-      // {
-      //   path: "/addSpot",
-      //   element: <ProtectedRoute><AddTouristSpot></AddTouristSpot></ProtectedRoute>,
-      // },
-      // {
-      //   path: '/myList/updateSpot/:id',
-      //   element: <UpdateSpot></UpdateSpot>,
-      //   loader: ({params}) => fetch(`https://mountrideserver.vercel.app/spot/${params.id}`)
-      // }
+      
     ],
     
   },

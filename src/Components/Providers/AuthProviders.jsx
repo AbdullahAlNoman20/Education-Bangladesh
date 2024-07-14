@@ -81,7 +81,7 @@ const AuthProviders = ({ children }) => {
       status: 'verified'
     }
 
-    const {data} = await axios.put(`http://localhost:5000/user`, currentUser)
+    // const {data} = await axios.put(``, currentUser)
     return data
   }
 

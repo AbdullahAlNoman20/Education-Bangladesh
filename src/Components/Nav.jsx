@@ -133,7 +133,21 @@ const Nav = () => {
             <NavLink to="/s_dashboard">
               <li>
                 <a>
-                Dashboard 
+                A Dashboard 
+                </a>
+              </li>
+            </NavLink>
+            <NavLink to="/t_dashboard">
+              <li>
+                <a>
+                T Dashboard 
+                </a>
+              </li>
+            </NavLink>
+            <NavLink to="/a_dashboard">
+              <li>
+                <a>
+                S Dashboard 
                 </a>
               </li>
             </NavLink>
