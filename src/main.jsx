@@ -135,9 +135,9 @@ const router = createBrowserRouter([
             loader: () => fetch('http://localhost:5000/nots')
           },
           {
-            path: "update/:id",
+            path: "/a_dashboard/update/:id",
             element: <UpdateNote></UpdateNote>,
-            loader: ({params}) => fetch(`http://localhost:5000/update/${params.id}`)
+            loader: ({params}) => fetch(`http://localhost:5000/nots/${params.id}`)
           },
           {
             path: "materials",

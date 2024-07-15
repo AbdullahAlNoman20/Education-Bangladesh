@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const UpdateNote = () => {
+  
   const [nots, setNots] = useState([]);
   const { id } = useParams();
   // console.log(id)
@@ -14,6 +15,7 @@ const UpdateNote = () => {
   // console.log(nots)
 
   const handleUpdate = (event) => {
+    event.preventDefault();
     const form = event.target;
     const email = form.email.value;
     const title = form.title.value;
@@ -22,7 +24,7 @@ const UpdateNote = () => {
     const updatedNotes = { email, title, text };
     console.log(updatedNotes);
 
-    fetch(`http://localhost:5000/updateNots/${id}`, {
+    fetch(`http://localhost:5000/nots/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -33,10 +35,9 @@ const UpdateNote = () => {
       .then((data) => {
         console.log(data);
 
-        //   if(data.modifiedCount>0){
-        //       alert('Note Updated successfully')
-        //       form.reset();
-        //   }
+          // if(data.modifiedCount>0){
+              alert('Note Updated successfully')
+          // }
       });
   };
 

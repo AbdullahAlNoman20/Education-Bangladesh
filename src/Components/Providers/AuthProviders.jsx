@@ -82,7 +82,7 @@ const AuthProviders = ({ children }) => {
     }
 
     // const {data} = await axios.put(``, currentUser)
-    return data
+    // return data
   }
 
   // For LogIn

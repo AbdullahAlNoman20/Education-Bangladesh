@@ -69,20 +69,7 @@ const Nav = () => {
                 </a>
               </li>
             </NavLink>
-            {/* <NavLink to="/Rooms">
-              <li>
-                <a>
-                  Rooms 
-                </a>
-              </li>
-            </NavLink>
-            <NavLink to="/MyBooking">
-              <li>
-                <a>
-                  My Booking
-                </a>
-              </li>
-            </NavLink> */}
+            
             </ul>
           </div>
           <a className="text-xl font-bold lg:text-2xl lg:font-bold">
@@ -152,34 +139,6 @@ const Nav = () => {
               </li>
             </NavLink>
 
-            {/* <NavLink to="/Rooms">
-              <li>
-                <a>
-                  Rooms 
-                </a>
-              </li>
-            </NavLink>
-            <NavLink to="/MyBooking">
-              <li>
-                <a>
-                  My Booking
-                </a>
-              </li>
-            </NavLink>
-            <NavLink to="/myList">
-              <li>
-                <a>
-                  My List
-                </a>
-              </li>
-            </NavLink>
-            <NavLink to="/addSpot">
-              <li>
-                <a>
-                  Add Comment 
-                </a>
-              </li>
-            </NavLink> */}
           </ul>
         </div>
 

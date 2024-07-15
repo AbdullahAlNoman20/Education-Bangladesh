@@ -48,9 +48,8 @@ const StudayMaterialForStudent = () => {
                 <span className="dark:text-gray-600">+25 381 77 983</span>
               </span>
               <span className="flex items-center space-x-2">
-                <button className="btn">
-                  {/* Open the modal using document.getElementById('ID').showModal() method */}
-                  <button
+              {/* Open the modal using document.getElementById('ID').showModal() method */}
+              <button
                     className="btn"
                     onClick={() =>
                       document.getElementById("my_modal_5").showModal()
@@ -111,7 +110,6 @@ const StudayMaterialForStudent = () => {
                       </div>
                     </div>
                   </dialog>
-                </button>
               </span>
             </div>
           </div>
